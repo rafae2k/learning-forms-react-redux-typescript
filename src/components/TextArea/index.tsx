@@ -11,6 +11,7 @@ const TextArea: React.FC<InputProps> = ({
   placeholder,
   onChange,
   value = '',
+  name,
 }) => {
   return (
     <Container>
@@ -21,6 +22,7 @@ const TextArea: React.FC<InputProps> = ({
           onChange={onChange}
           value={value}
           rows={3}
+          name={name}
         />
       </label>
     </Container>
