@@ -1,10 +1,16 @@
-import './App.css'
+import React from 'react';
 
-function App() {
+import GlobalStyles from './Themes/GlobalStyles';
+
+import FormDataDisplay from './pages/FormDataDisplay';
+
+const App: React.FC = () => {
   return (
-    <div className="App">
+    <div className='App'>
+      <GlobalStyles />
+      <FormDataDisplay />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
