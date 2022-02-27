@@ -10,6 +10,9 @@ export interface rootReducerState {
   profissional: ProfessionalData;
 }
 
-const rootReducer = combineReducers<rootReducer>({ personal, profissional });
+const rootReducer = combineReducers<rootReducerState>({
+  personal,
+  profissional,
+});
 
 export default rootReducer;
