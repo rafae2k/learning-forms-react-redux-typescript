@@ -1,16 +1,13 @@
-import { ReactNode } from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 
 import { Container } from './styles';
 
-interface ButtonProps {
-  children: ReactNode;
-}
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
 
-function Button({ children }: ButtonProps) {
+const Button: React.FC<ButtonProps> = (props) => {
   return (
     <Container>
-      <h1>Button</h1>
-      {children}
+      <button {...props}></button>
     </Container>
   );
 };
