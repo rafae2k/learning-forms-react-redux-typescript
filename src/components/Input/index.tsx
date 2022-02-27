@@ -17,6 +17,7 @@ const Input: React.FC<InputProps> = ({
   type = 'text',
   onChange,
   value = '',
+  name,
 }) => {
   return (
     <Container>
@@ -27,6 +28,7 @@ const Input: React.FC<InputProps> = ({
           placeholder={placeholder}
           onChange={onChange}
           value={value}
+          name={name}
         />
       </label>
     </Container>
