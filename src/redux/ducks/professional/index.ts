@@ -16,9 +16,8 @@ export const professional: Reducer<ProfessionalData> = (
   switch (action.type) {
     case ProfessionalActions.PROFESSIONAL_DATA:
       return { ...state, ...action.payload };
-
     default:
-      break;
+      return state;
   }
 };
 
